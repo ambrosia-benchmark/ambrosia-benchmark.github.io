@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMBROSIA</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#data-code">Data and Code</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container"> 
+            <div class="main-container"> 
+                <div class="logo-container">
+                    <img src="logo.svg" alt="Logo" class="logo">
+                </div>
+                <div class="title-container">
+                    <div class="title-text">
+                        <h1>
+                            <strong>𝔸𝕄𝔹ℝ𝕆𝕊𝕀𝔸</strong>: A Benchmark for Parsing <br> Ambiguous Questions into Database Queries
+                        </h1>
+                    </div>
+                </div>
+            </div>
+                <div class="authors-container">
+                        <p class="authors"><a href="https://saparina.github.io/"  class="author-link">Irina Saparina</a> and <a href="https://homepages.inf.ed.ac.uk/mlap/"  class="author-link">Mirella Lapata</a></p>
+                        <p class="affiliation">University of Edinburgh</p>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+            <div class="container" id="about">
+                <h2>About</h2>
+                <p>Practical semantic parsers are expected to understand user utterances and map them to executable programs, even when these are ambiguous. We introduce a new benchmark, <strong>𝔸𝕄𝔹ℝ𝕆𝕊𝕀𝔸</strong>, which we hope will inform and inspire the development of text-to-SQL parsers capable of recognizing and interpreting ambiguous requests. Our dataset contains questions showcasing three different types of ambiguity (scope ambiguity, attachment ambiguity, and vagueness), their interpretations, and corresponding SQL queries. In each case, the ambiguity persists even when the database context is provided.
+                </p>
+                <figure>
+                    <img src="example.svg" alt="Types of ambiguous questions (highlighted in blue), their interpretations (highlighted in green), and corresponding SQL queries. Database elements that could lead to ambiguity are highlighted in orange"  class="custom-width">
+                    <figcaption>Types of ambiguous questions (highlighted in blue), their interpretations (highlighted in green), and corresponding SQL queries. Database elements that could lead to ambiguity are highlighted in orange.</figcaption>
+                </figure>
+            </div>
+
+            <div class="container" id="data-code">
+                <h2>Data and Code</h2>
+                <p><a href="https://datasync.ed.ac.uk/index.php/s/pOk0Kfrn1oq96UR" class="btn">Download Dataset</a><a href="https://github.com/saparina/ambrosia" class="btn">Code Repository</a></p>
+                <p>We aim to use our dataset for a fair evaluation of LLMs in text-to-SQL semantic parsing with ambiguous questions. To this end, we are providing access through a password-protected link. Once you enter the password, you will be able to download the data using a web interface or any command line utility like wget.</p> 
+                <p class="no-copy">
+                Password: <strong>AM8R0S1A</strong></p>
+
+                <p>We kindly request that you do not upload our dataset to GitHub or Transformers Hub to ensure it is not used for training any LLMs.</p>
+
+            </div>
+
+            </div>
+            <div class="container" id="contact">
+                <h2>Contact</h2>
+                <p>If you need help accessing data or have questions, please contact <a href="https://saparina.github.io/" class="link">Irina Saparina</a>.</p>
+            </div>
+
+    </main>
+
+    <footer>
+            <p>&copy; 2024 Irina Saparina. All rights reserved.</p>
+    </footer>
+</body>
+</html>
